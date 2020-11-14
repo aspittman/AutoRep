@@ -7,22 +7,19 @@
 
     <fragment
         android:id="@+id/fragment_home"
-        android:name="com.affinityapps.txtr.ui.home.HomeFragment"
+        android:name="com.affinityapps.autorep.ui.home.RepFragment"
         android:label="Home Fragment"
-        tools:layout="@layout/fragment_rep">
-    </fragment>
+        tools:layout="@layout/fragment_rep"/>
 
     <fragment
         android:id="@+id/fragment_statistics"
-        android:name="com.affinityapps.txtr.ui.graphs.StatisticsFragment"
+        android:name="com.affinityapps.autorep.ui.test.TestFragment"
         android:label="Statistics Fragment"
-        tools:layout="@layout/fragment_statistics">
-    </fragment>
+        tools:layout="@layout/fragment_test"/>
 
     <fragment
         android:id="@+id/fragment_summary"
-        android:name="com.affinityapps.txtr.ui.summary.SummaryFragment"
+        android:name="com.affinityapps.autorep.ui.settings.SettingsFragment"
         android:label="Summary Fragment"
-        tools:layout="@layout/fragment_settings">
-    </fragment>
+        tools:layout="@layout/fragment_settings"/>
 </navigation>

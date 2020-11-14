@@ -1,4 +1,4 @@
-package com.affinityapps.autorep
+package com.affinityapps.autorep.ui.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
