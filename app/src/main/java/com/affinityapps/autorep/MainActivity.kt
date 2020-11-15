@@ -14,12 +14,19 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.recyclerview.widget.RecyclerView
 import com.affinityapps.autorep.databinding.ActivityMainBinding
+import com.affinityapps.autorep.ui.home.Home
+import com.affinityapps.autorep.ui.home.HomeAdapter
+import com.affinityapps.autorep.ui.home.HomeFragment
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var autoArrayList: ArrayList<Home>
+    private lateinit var homeAdapter: HomeAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,11 +79,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun addTrackerRow() {
         val dialogBuilder = AlertDialog.Builder(this)
+        autoArrayList = ArrayList()
 
         dialogBuilder.setMessage("Click add to add a task to the list")
             .setCancelable(false)
             .setPositiveButton("Add", DialogInterface.OnClickListener { dialog, id ->
-                //add row function here
+
+                autoArrayList.add(Home("aksdjbfgs", "sdfljkgfd"))
+                homeAdapter = HomeAdapter(autoArrayList)
+                rep_fragment_recyclerview.adapter = homeAdapter
+                homeAdapter.notifyDataSetChanged()
+
             })
             .setNegativeButton("Cancel", DialogInterface.OnClickListener { dialog, id ->
                 dialog.cancel()

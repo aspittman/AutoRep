@@ -19,4 +19,5 @@
         android:icon="@drawable/ic_settings"
         android:title="@string/menu_settings"
         app:showAsAction="ifRoom"/>
+
 </menu>
