@@ -6,10 +6,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.affinityapps.autorep.databinding.RepListItemsBinding
 
-class RepAdapter(
-    private val autoFragmentArrayList: List<Rep>,
+class HomeAdapter(
+    private val autoFragmentArrayList: List<Home>,
 ) :
-    RecyclerView.Adapter<RepAdapter.RepFragmentViewHolder>() {
+    RecyclerView.Adapter<HomeAdapter.RepFragmentViewHolder>() {
 
     inner class RepFragmentViewHolder(binding: RepListItemsBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -29,9 +29,9 @@ class RepAdapter(
 
     override fun onBindViewHolder(holder: RepFragmentViewHolder, position: Int) {
 
-        val rep: Rep = autoFragmentArrayList[position]
-        holder.nameTextView.text = rep.name
-        holder.numberTextView.text = rep.number
+        val home: Home = autoFragmentArrayList[position]
+        holder.nameTextView.text = home.name
+        holder.numberTextView.text = home.number
 
     }
 

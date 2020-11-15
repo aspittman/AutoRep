@@ -9,14 +9,14 @@
         app:showAsAction="ifRoom"/>
 
     <item
-        android:id="@+id/fragment_summary"
-        android:icon="@drawable/ic_star"
-        android:title="@string/menu_forum"
+        android:id="@+id/fragment_progress"
+        android:icon="@drawable/ic_progress"
+        android:title="@string/menu_progress"
         app:showAsAction="ifRoom"/>
 
     <item
-        android:id="@+id/fragment_messages"
+        android:id="@+id/fragment_settings"
         android:icon="@drawable/ic_settings"
-        android:title="@string/menu_messages"
+        android:title="@string/menu_settings"
         app:showAsAction="ifRoom"/>
 </menu>

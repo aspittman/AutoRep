@@ -1,13 +1,13 @@
-package com.affinityapps.autorep.ui.test
+package com.affinityapps.autorep.ui.progress
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class TestViewModel : ViewModel() {
+class ProgressViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is slideshow Fragment"
+        value = "This is progress Fragment"
     }
     val text: LiveData<String> = _text
 }

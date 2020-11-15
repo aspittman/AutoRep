@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">AutoRep</string>
     <string name="menu_home">Home</string>
-    <string name="menu_statistics">Statistics</string>
-    <string name="menu_forum">Forum</string>
-    <string name="menu_messages">Messages</string>
+    <string name="menu_progress">Progress</string>
+    <string name="menu_settings">Settings</string>
 
     <!--Graph Labels-->
     <string name="tab_day">Day</string>
@@ -12,6 +11,8 @@
 
     <!--Content Descriptions-->
     <string name="fab_contacts">Add Contacts</string>
+    <string name="toolbar_add">Add Rows</string>
+    <string name="toolbar_light_dark">Dark Mode</string>
 
     <!--Navigation Drawer-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
