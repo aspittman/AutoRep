@@ -1,5 +1,6 @@
 package com.affinityapps.autorep.ui.home
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
@@ -16,7 +17,6 @@ class HomeAdapter(
 
         var nameTextView: TextView = binding.dataName
         var numberTextView: TextView = binding.dataNumber
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RepFragmentViewHolder {
@@ -32,7 +32,7 @@ class HomeAdapter(
         val home: Home = autoFragmentArrayList[position]
         holder.nameTextView.text = home.name
         holder.numberTextView.text = home.number
-
+        Log.d("Binding-Adj", "Position is at $position")
     }
 
     override fun getItemCount() = autoFragmentArrayList.size

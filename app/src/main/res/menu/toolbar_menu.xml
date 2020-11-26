@@ -7,10 +7,4 @@
         android:icon="@drawable/ic_add"
         android:title="@string/toolbar_add"
         app:showAsAction="ifRoom"/>
-
-    <item
-        android:id="@+id/dark_light"
-        android:icon="@drawable/ic_dark_light"
-        android:title="@string/toolbar_light_dark"
-        app:showAsAction="ifRoom"/>
 </menu>
